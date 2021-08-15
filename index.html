@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="id=edge" />
+    <title>Hand Tracking | Don't Touch Your Face!</title>
+</head>
+
+<body>
+    <audio src="./The Price is Right Ding - Gaming Sound Effect (HD).mp3" id="audio"></audio>
+    <video id="video"></video>
+    <!-- top of the page -->
+    
+    <section id="hero-container">
+        <div id="hero">
+            <img id = "image-1" src = "The_Shocker-logo-E8F64BD9F6-seeklogo.com.png">
+            <h1>HandImmuno</h1>
+        </div>
+    </section>
+
+    <!-- the camera feed -->
+    <section id="canvas-contatiner">
+        <div id = "canvas-div"> 
+            <canvas id="canvas"></canvas>
+            <script src="https://cdn.jsdelivr.net/npm/handtrackjs@0.0.13/dist/handtrack.min.js"> </script>
+        </div>
+    </section>
+    <section id = "stopwatch-container">
+        <div id = "stopwatch">00:00:00</div>
+    </section>
+    
+    <!-- Buttons -->
+    <section id = "start/stopbuttons">
+        <ul id="buttons">
+            <li><button id="start">Start</button></li>
+            <li><button id="end">End</button></li>
+          </ul>
+    </section>
+   
+    <!-- The text stuff i guess -->
+    <section id = "texts">
+        <div class = "how-to-use">
+            <a> 
+                <img id = "arrowImg" src = "Arrow.png" onclick="myFunction()">
+                How it works 
+            </a>
+            <p id = "paragraph">Turn on your webcam, and we will give you a gentle 
+                reminder everytime your hand gets too close to your face</p>
+        </div>
+        <br><br>
+        <div class = "how-to-use2">
+            <a> 
+                <img id = "arrowImg2" src = "Arrow.png" onclick="myFunction2()" >
+                How we made it
+            </a>
+            <pre id = "paragraph2" style = "font-size:15px">   We used a JS library to track your hand movements</pre>
+        </div>
+        
+    </section>
+    
+    <h3 id = "stop-text">STOP</h3>
+</body>
+    <!-- Creating the Script at the very bottom, should work? -->
+
+    <script src="app.js"></script>
+</html>
